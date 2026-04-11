@@ -55,7 +55,7 @@ python main.py
 **Open your terminal and run:**
 ```bash
 # Clone the repository
-git clone [https://github.com/Kingmarw/Biro-Bot-V7.git](https://github.com/Kingmarw/Biro-Bot-V7.git)
+git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Navigate to the project directory
 cd Biro-Bot-V7
@@ -75,7 +75,7 @@ python main.py
 3.Open CMD or PowerShell and execute:
 ```bash
 # Clone the repo
-git clone [https://github.com/Kingmarw/Biro-Bot-V7.git](https://github.com/Kingmarw/Biro-Bot-V7.git)
+git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Enter the directory
 cd Biro-Bot-V7
