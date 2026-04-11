@@ -14,7 +14,7 @@
 
 ## 📖 About The Project
 
-**BIRO BOT V7** is a powerful, automated stress-testing tool built with Python and Selenium. It features a high-performance engine specifically designed for sending advanced dynamic payloads and custom V-Cards to test the rendering capabilities of messaging applications.
+**BIRO BOT** is a powerful, automated stress-testing tool built with Python and Selenium. It features a high-performance engine specifically designed for sending advanced dynamic payloads and custom V-Cards to test the rendering capabilities of messaging applications.
 
 ### ✨ Key Features
 - **🔥 Ultra-Crash Payload:** Generates randomized, heavy text patterns and invisible characters.
