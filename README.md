@@ -98,6 +98,8 @@ python main.py
 5.Enter the target phone number (including the country code, e.g., +201...).
 
 6.Watch the terminal for live execution status and duration metrics.
+
+
 *Note: The bot automatically saves your session data in a local whatsapp_session folder, so you don't need to scan the QR code every time you open the tool.*
 ## ⚠️ Disclaimer
 Educational Purposes Only. This script is provided for educational and authorized stress-testing purposes. The developer does not condone or support the use of this tool for malicious activities, harassment, or unauthorized access. You are solely responsible for your actions and any consequences that arise from using this software. Using this on personal accounts may result in a permanent ban from WhatsApp.
