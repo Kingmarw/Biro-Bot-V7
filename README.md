@@ -106,6 +106,7 @@ Educational Purposes Only. This script is provided for educational and authorize
 
 ## 👨‍💻 Developer Information
 *Developed and maintained by Marwan Elbadry*
+
 • **GitHub: [@Kingmarw](https://github.com/Kingmarw)**
 
 • **Portfolio: [Marwan Elbadry | Portfolio](https://kingmarw.vercel.app)**
