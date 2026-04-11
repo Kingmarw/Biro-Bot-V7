@@ -40,7 +40,7 @@ pkg update && pkg upgrade -y
 pkg install python git -y
 
 # Clone the repository
-git clone [https://github.com/Kingmarw/Biro-Bot-V7.git](https://github.com/Kingmarw/Biro-Bot-V7.git)
+git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Navigate to the project directory
 cd Biro-Bot-V7
